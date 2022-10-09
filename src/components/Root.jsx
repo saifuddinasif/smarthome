@@ -10,13 +10,17 @@ const Root = () => {
 
 const products = useLoaderData();
 
+
+
 /* the procuts value will be available to all the components inside ProductContext.Provider */
     return (
         <ProduceContext.Provider value={[products]}>
         <div>
+
+
             <Header></Header>
              
-           <Outlet/>
+             <Outlet/>
             <Footer/>
         </div>
         </ProduceContext.Provider>
